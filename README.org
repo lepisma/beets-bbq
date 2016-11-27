@@ -1,0 +1,20 @@
+#+TITLE: bbq
+
+[[https://github.com/lepisma/blackbird][blackbird]] style search query plugin for [[https://github.com/beetbox/beets][beets]].
+
+Prepend queries with ~#~ and play around with ~+~, ~-~ and spaces.
+
+#+BEGIN_SRC shell
+→ beet ls '#swift - 1989 + beach house'
+→ beet play '#evanescence + within temptation'
+#+END_SRC
+
+*~beets~ configuration*
+#+BEGIN_SRC yaml
+---
+pluginpath:
+  - path/to/bbq's/beetsplug
+bbq:
+  fields: <beets db fields to combine>
+---
+#+END_SRC
