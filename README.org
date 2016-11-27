@@ -9,7 +9,7 @@ Prepend queries with ~#~ and play around with ~+~, ~-~ and spaces.
 → beet play '#evanescence + within temptation'
 #+END_SRC
 
-*~beets~ configuration*
+~beets.yaml~ configuration:
 #+BEGIN_SRC yaml
 ---
 pluginpath:
