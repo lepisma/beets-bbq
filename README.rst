@@ -1,6 +1,9 @@
 beets-bbq
 =========
 
+.. image:: https://img.shields.io/pypi/v/beets-bbq.svg
+  :target: https://pypi.python.org/pypi/beets-bbq
+
 `blackbird
 <https://github.com/lepisma/blackbird>`_ style search query plugin for `beets
 <https://github.com/beetbox/beets>`_.
