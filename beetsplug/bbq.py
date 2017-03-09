@@ -39,10 +39,7 @@ def match_bbq_patterns(val, bbq_patterns, debug=False):
     Return the final match verdict
     """
 
-    matches = {
-        "+": [],
-        "-": []
-    }
+    matches = {"+": [], "-": []}
 
     for bbq_pattern in bbq_patterns:
         root = bbq_pattern[0]
@@ -58,9 +55,8 @@ def match_bbq_patterns(val, bbq_patterns, debug=False):
 
 
 class BBQuery(FieldQuery):
-
     def __init__(self, field, pattern, fast=True):
-        super(BBQuery, self).__init__(field, pattern, fast)
+        super().__init__(field, pattern, fast)
 
         # Search in these fields only
         self.search_fields = config["bbq"]["fields"].as_str_seq()
@@ -76,7 +72,7 @@ class BBQuery(FieldQuery):
 
 class BBQ(BeetsPlugin):
     def __init__(self):
-        super(BBQ, self).__init__()
+        super().__init__()
         self.config.add({
             "prefix": "#",
             "fields": ["artist", "title", "album"]  # Default search fields
