@@ -20,7 +20,7 @@ Install
 
 ``pip install beets-bbq``
 
-``beets.yaml`` configuration:
+Optional ``beets.yaml`` configuration:
 
 .. code-block:: yaml
 
